@@ -34,3 +34,27 @@
     text-decoration: none;
     color: white;
 }
+
+.principal {
+    margin-top: 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+}
+
+.principal__titulo {
+    font-size: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.imagem {
+    width: 35px;
+    height: 35px;
+}
