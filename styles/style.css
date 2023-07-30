@@ -1,60 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
 * {
     padding: 0;
-    margin: 1%;
-    font-family: 'Lato', sans-serif;
-    background-color: black;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container {
+section {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.titulo {
+header .titulo {
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
     font-weight: 700;
-    color: white;
-    font-size: 2.5em;
-}
-
-.navegacao {
-    font-weight: 500;
-    width: 40%;
-}
-
-.navegacao__lista {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-
-.navegacao__lista__links {
     text-decoration: none;
-    color: white;
+    letter-spacing: 1px;
+}
+
+header .navegacao {
+    position: relative;
+    display: flex;
+}
+
+header .navegacao li {
+    list-style: none;
+}
+
+header .navegacao li a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+header .navegacao li a:hover {
+    color: #03a9f4;
 }
 
 .principal {
-    margin-top: 10%;
-    color: white;
+    max-width: 600px;
+}
+
+.principal .container h2{
+    font-size: 4em;
+    color: #fff;
+    line-height: 1em;
+}
+
+.principal .container p{
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.principal .container a{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.links {
+    position: absolute;
+    bottom: 30px;
     display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 40px;
 }
 
-.principal__titulo {
-    font-size: 40px;
-}
-
-.footer {
+.links li {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
-.imagem {
-    width: 35px;
-    height: 35px;
+.links li a {
+    position: relative;
+    display:inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
 }
